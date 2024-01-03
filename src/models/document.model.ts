@@ -46,6 +46,7 @@ import mongoose, {
     PRODUCT_AUDIO = "PRODUCT_AUDIO",
     PRODUCT_DOCUMENT = "PRODUCT_DOCUMENT",
     OTHER = "OTHER",
+    RESUME = 'RESUME'
   }
   
   const schema: Schema = new Schema(

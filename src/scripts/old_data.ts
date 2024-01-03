@@ -2,7 +2,7 @@
 import mongoose, { Mongoose } from "mongoose"
 import dotenv from 'dotenv';
 import * as readline from 'readline';
-import UserModel, { SUBSCRUPTION_TYPE } from "../models/user.model";
+import UserModel, {  } from "../models/user.model";
 import moment from "moment";
 
 dotenv.config();
@@ -32,7 +32,7 @@ dotenv.config();
                     displayName : "Karnaphuli Jewellery",
                     email:"karnaphulijewellery@gmail.com",
                     image: "https://lh3.googleusercontent.com/a/AAcHTteXkABSy_pcGt4rfxHs1bGCpxfgc-lCo_E-Hs0f=s96-c",
-                    subscriptionType: SUBSCRUPTION_TYPE.YEARLY,
+              
                     subscribetionDate: moment("2023-06-10 18:50:55").format('YYYY-MM-DD HH:mm:ss'),
                     exparationDate: moment("2024-06-10 17:14:54").format('YYYY-MM-DD HH:mm:ss'),
                     apiSecretKey: 'JUW0FexuguFLpsMNIdveXckJJwSraF61',
@@ -45,7 +45,7 @@ dotenv.config();
                     displayName : "Royal Bengal",
                     email:"taghyeerit.app@gmail.com",
                     image: "https://lh3.googleusercontent.com/a/AEdFTp7PTbx__VnavMmJEHTtrkaNj5azP3OkuDW2-2-I=s96-c",
-                    subscriptionType: SUBSCRUPTION_TYPE.YEARLY,
+                  
                     subscribetionDate: moment("2023-02-06 18:47:55").format('YYYY-MM-DD HH:mm:ss'),
                     exparationDate: moment("2024-03-17 22:21:27").format('YYYY-MM-DD HH:mm:ss'),
                     apiSecretKey: 'JUW0FexuguFLpsMNIdveXckJJwSraF69',

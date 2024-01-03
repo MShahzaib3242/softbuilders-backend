@@ -1,8 +1,9 @@
 import express, { Response, Router } from 'express';
 import { apiResponse } from '../../utils/apiResponse';
 import { CustomRequest } from '../../interface/CustomRequest';
-import category from './category.routes'
-import product from './product.routes'
+import departmentRoutes from "./departments.routes";
+
+
 const router: Router = express.Router();
 
 
@@ -12,8 +13,7 @@ router.get('/', (req: CustomRequest, res: Response) => {
         message: "OK",
     });
 });
-router.use('/category',category)
-router.use('/product',product)
 
+router.use("/departments", departmentRoutes);
 
 export default router;

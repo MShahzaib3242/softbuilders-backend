@@ -36,3 +36,11 @@ export function generateSecretKey(): string {
 
   return secretKey;
 }
+
+export const makeSlug = (slug: string) => {
+  let newSlug = slug.toLowerCase().replace(/[^\w-]+/g, "-");
+  while (newSlug.indexOf("--") !== -1) {
+    newSlug = newSlug.replace("--", "-");
+  }
+  return newSlug;
+};
